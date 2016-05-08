@@ -6,7 +6,7 @@ and a valid signing key must have been imported to the GPG keychain in order for
 Embeds images and url('xxx') resources into the HTML page as base64 encoded data and signs the final file by
 appending comment blocks before and after the &lt;html&gt; tags.
 
-Please note that this application does not work on arbirary HTML files. It is rather a tool for compiling special
+Please note that this application does not work on arbitrary HTML files. It is rather a tool for compiling special
 purpose HTML source files to a static, signed single-source web page.
 
 Usage:
