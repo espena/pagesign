@@ -4,7 +4,7 @@ HTML page compiler and GPG signer. GPG Tools and the gnupg PHP extension must be
 and a valid signing key must have been imported to the GPG keychain in order for this to work.
 
 Embeds images and url('xxx') resources into the HTML page as base64 encoded data and signs the final file by
-appending comment blocks before and after the <html> tags.
+appending comment blocks before and after the &lt;html&gt; tags.
 
 Usage:
 ```php pagesign.php source destination fingerprint comments```
@@ -15,7 +15,7 @@ _destination_ : The destination HTML file name.
 
 _fingerprint_ : The fingerprint for the signing key. Must exist in GPG keychain.
 
-_comments_ : Text template of the information comment block to be inserted immediately before the <html> start tag.
+_comments_ : Text template of the information comment block to be inserted immediately before the &lt;html&gt; start tag.
              The tag {keyinfo} can be used anywhere in this text file to output basic information of the signing key.
 
 License: [GPL Version 3, 29 June 2007](LICENSE.md) 
