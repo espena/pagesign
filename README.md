@@ -3,7 +3,7 @@
 HTML page compiler and GPG signer. GPG Tools and the gnupg PHP extension must be installed on the system,
 and a valid signing key must have been imported to the GPG keychain in order for this to work.
 
-Embeds images and url('xxx') resources into the HTML page as bas64 encoded data and signs the final file by
+Embeds images and url('xxx') resources into the HTML page as base64 encoded data and signs the final file by
 appending comment blocks before and after the <html> tags.
 
 Usage:
