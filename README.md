@@ -17,3 +17,5 @@ _fingerprint_ : The fingerprint for the signing key. Must exist in GPG keychain.
 
 _comments_ : Text template of the information comment block to be inserted immediately before the <html> start tag.
              The tag {keyinfo} can be used anywhere in this text file to output basic information of the signing key.
+
+License: [GPL Version 3, 29 June 2007](LICENSE.md) 
