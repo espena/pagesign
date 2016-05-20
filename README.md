@@ -27,7 +27,7 @@ The entire content of the resulting HTML page, including image assets, can then 
 ##Example
 
 The HTML file _source.html_ points to ``my_styles.css`` in a CSS link tag, uses ``my_functions.js`` as source for
-a script tag and embeds ´´´my_logo.jpg´´´ in an image tag:
+a script tag and embeds ``my_logo.jpg`` in an image tag. All files are located locally in the same directory.
 
 ```html
 <!doctype html>
@@ -48,14 +48,15 @@ a script tag and embeds ´´´my_logo.jpg´´´ in an image tag:
 </html>
 ```
 
-Assuming that /path/to/pagesign.php is where the pagesign script is located, and the private key corresponding to pubkey
-BA7EAC9F78DAC483B0C7DE79DD32F64A341F8E25 is imported to your GPG keychain, the command
+Assuming that ``/path/to/pagesign.php`` is where the pagesign script is located, and the private key corresponding to pubkey
+with fingerprint ``BA7EAC9F78DAC483B0C7DE79DD32F64A341F8E25`` is already imported to your GPG keychain, the command
 
 ```shell
 php /path/to/pagesign.php  source.html  destination.html  BA7EAC9F78DAC483B0C7DE79DD32F64A341F8E25
 ```
 
-will create a file named _destination.html_ containing the following (base64 encoded image string is truncated):
+will create a file named _destination.html_. You will be prompted for your private key's password if applicable.
+The destination file will contain something similar to this (the base64 encoded image string is removed):
 
 ```html
 <!doctype html><!--
