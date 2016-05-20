@@ -16,7 +16,7 @@ _source_ : The source HTML file name.
 
 _destination_ : The destination HTML file name.
 
-_fingerprint_ : The fingerprint for the signing key's public key. The private key must exist in GPG keychain.
+_fingerprint_ : The fingerprint for the signing key's public key. The (private) signing key must exist in GPG keychain.
 
 _comments_ : Path to text file containing the template for the information block to be inserted immediately before
              the &lt;html&gt; start tag. The tag {keyinfo} can be used anywhere in this text file to output basic
