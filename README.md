@@ -124,7 +124,9 @@ support, service, corrections, or upgrades to the free software programs.
 Pagesign uses the [PHP gnupg](https://pecl.php.net/package/gnupg) extension, maintained by Jim Jagielski and Sean DuBois.
 
 Copyright (c) Jim Jagielski <jimjag@php.net>
+
 Copyright (c) Sean DuBois <sean@siobud.com>
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -152,7 +154,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 Pagesign uses [PHP Minify](https://github.com/mrclay/minify), written by Ryan Grove and Steve Clay.
 
 Copyright (c) 2008 Ryan Grove <ryan@wonko.com>
+
 Copyright (c) 2008 Steve Clay <steve@mrclay.org>
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
