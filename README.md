@@ -108,8 +108,6 @@ curl https://url.to/destination.html | gpg > /dev/null
 
 ## Licensing
 
-### Pagesign
-
 Pagesign is written by Espen Andersen, and released under the [GNU General Public License](http://www.gnu.org/licenses/gpl.txt).
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
