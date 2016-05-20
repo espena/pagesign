@@ -18,8 +18,9 @@ _destination_ : The destination HTML file name.
 
 _fingerprint_ : The fingerprint for the signing key. Must exist in GPG keychain.
 
-_comments_ : Text template of the information comment block to be inserted immediately before the &lt;html&gt; start tag.
-             The tag {keyinfo} can be used anywhere in this text file to output basic information of the signing key.
+_comments_ : Path to text file containing the template for the information block to be inserted immediately before
+             the &lt;html&gt; start tag. The tag {keyinfo} can be used anywhere in this text file to output basic
+             information of the signing key.
 
 The entire content of the resulting HTML page, including image assets, can then be verified by anoyne using GPG.
 
