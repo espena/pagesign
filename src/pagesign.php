@@ -25,7 +25,7 @@
       $html = Minify_HTML::minify( $html, array( 'cssMinifier' => array( 'Minify_CSS', 'minify' ), 'jsMinifier' => array( 'JSMin', 'minify' ) ) );
       $fpr = $argv[ 3 ];
       $keyinfo = str_replace( "\n", "\n  ", trim( `gpg --list-keys --with-fingerprint $fpr` ) ) . "\n";
-      $header = file_exists( $argv[ 4 ] ) ? str_replace( '{keyinfo}', $keyinfo, file_get_contents( $argv[ 4 ] ) ) : $keyinfo;
+      $header = $argc > 4 && file_exists( $argv[ 4 ] ) ? str_replace( '{keyinfo}', $keyinfo, file_get_contents( $argv[ 4 ] ) ) : $keyinfo;
       $gpg = gnupg_init();
       gnupg_addsignkey( $gpg, $fpr );
       $html = preg_split( '/<[\/ ]?html/', $html );
