@@ -106,7 +106,7 @@ or, if it is located on a web server:
 curl https://url.to/destination.html | gpg > /dev/null
 ```
 
-## License
+## Licensing
 
 ### Pagesign
 
