@@ -26,7 +26,7 @@ The entire content of the resulting HTML page, including image assets, can then 
 
 ##Example
 
-The HTML file _source.html_ points to ´´´my_styles.css´´´ in a CSS link tag, uses ´´´my_functions.js´´´ as source for
+The HTML file _source.html_ points to ``my_styles.css`` in a CSS link tag, uses ``my_functions.js`` as source for
 a script tag and embeds ´´´my_logo.jpg´´´ in an image tag:
 
 ```html
