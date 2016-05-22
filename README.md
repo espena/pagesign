@@ -110,6 +110,12 @@ curl https://url.to/destination.html | gpg > /dev/null
 
 ![Console recording](https://github.com/espena/pagesign/raw/master/tty1.gif "Verifying remotely using curl and gpg")
 
+## Important!
+
+Users should also check the source code to verify that nothing has been added after the signature! A possible attacker
+might insert a javascript element after the HTML tag, and browsers happily execute the code even if it's outside the
+DOM. This is a security issue I'd like som input on if someone knows how to solve it.
+
 ## Installation
 
 It might be worth the effort to make a shorthand script and put it in one of your system's binary directories. 
