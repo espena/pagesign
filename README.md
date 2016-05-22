@@ -106,6 +106,25 @@ or, if it is located on a web server:
 curl https://url.to/destination.html | gpg > /dev/null
 ```
 
+## Installation
+
+It might be worth the effort to make a shorthand script and put it in one of your system's binary directories. 
+The script is very simple:
+
+```shell
+&#35!/bin/bash
+$(which php) -q /projects/pagesign/src/pagesign.php $1 $2 $3 $4
+```
+
+Name the file ``pagesign`` and set correct permissions. The file should be owned by root and made executable. Move it over to
+one of the directories enlisted in your $PATH environment variable, ``/usr/local/bin`` is a good place.
+
+Afther this, you can call pagesign from anywhere, using this syntax:
+
+```shell
+pagesign  source  destination  fingerprint  [comments]
+```
+
 ## Licensing
 
 Pagesign is written by Espen Andersen, and released under the [GNU General Public License](http://www.gnu.org/licenses/gpl.txt).
