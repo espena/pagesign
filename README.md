@@ -112,7 +112,7 @@ It might be worth the effort to make a shorthand script and put it in one of you
 The script is very simple:
 
 ```shell
-&#35!/bin/bash
+#!/bin/bash
 $(which php) -q /projects/pagesign/src/pagesign.php $1 $2 $3 $4
 ```
 
