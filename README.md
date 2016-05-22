@@ -122,7 +122,7 @@ Change ``/projects/pagesign/src`` to the correct path to ``pagesign.php`` on you
 and set correct permissions. The file should be owned by root and made executable. Move it over to one of the
 directories enlisted in your $PATH environment variable, ``/usr/local/bin`` is a good place.
 
-Afther this, you can call pagesign from anywhere, using this syntax:
+After this, you can call pagesign from anywhere, using this syntax:
 
 ```shell
 pagesign  source  destination  fingerprint  [comments]
