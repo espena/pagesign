@@ -106,6 +106,8 @@ or, if it is located on a web server:
 curl https://url.to/destination.html | gpg > /dev/null
 ```
 
+![Console recording](https://github.com/espena/pagesign/raw/master/tty1.gif "Verifying using curl and gpg")
+
 ## Installation
 
 It might be worth the effort to make a shorthand script and put it in one of your system's binary directories. 
