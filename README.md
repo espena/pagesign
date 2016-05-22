@@ -114,7 +114,7 @@ curl https://url.to/destination.html | gpg > /dev/null
 
 Users should also check the source code to verify that nothing has been added before or after the signature.
 A possible attacker might insert a javascript element after the HTML tag, and browsers happily execute the code
-even if it's outside the DOM. This is a security issue I'd like som input on if someone knows how to solve it.
+even if it's outside the DOM. This is a security issue I'd like some input on if someone knows how to solve it.
 
 ## Installation
 
