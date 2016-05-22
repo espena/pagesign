@@ -100,9 +100,7 @@ On Linux/OSX, the signature may then be verified by running
 gpg --verify destination.html
 ```
 
-![Console recording](https://github.com/espena/pagesign/raw/master/tty0.gif "Verifying locally using gpg")
-
-or, if it is located on a web server:
+or, if the HTML file is published on a web server:
 
 ```shell
 curl https://url.to/destination.html | gpg > /dev/null
@@ -124,7 +122,7 @@ Change ``/projects/pagesign/src`` to the correct path to ``pagesign.php`` on you
 and set correct permissions. The file should be owned by root and made executable. Move it over to one of the
 directories enlisted in your $PATH environment variable, ``/usr/local/bin`` is a good place.
 
-Afther this, you can call pagesign from anywhere, using this syntax:
+After this, you can call pagesign from anywhere, using this syntax:
 
 ```shell
 pagesign  source  destination  fingerprint  [comments]
