@@ -100,7 +100,7 @@ On Linux/OSX, the signature may then be verified by running
 gpg --verify destination.html
 ```
 
-or, if it is located on a web server:
+or, if the HTML file is published on a web server:
 
 ```shell
 curl https://url.to/destination.html | gpg > /dev/null
