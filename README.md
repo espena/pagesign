@@ -100,13 +100,15 @@ On Linux/OSX, the signature may then be verified by running
 gpg --verify destination.html
 ```
 
+![Console recording](https://github.com/espena/pagesign/raw/master/tty0.gif "Verifying locally using curl and gpg")
+
 or, if the HTML file is published on a web server:
 
 ```shell
 curl https://url.to/destination.html | gpg > /dev/null
 ```
 
-![Console recording](https://github.com/espena/pagesign/raw/master/tty1.gif "Verifying using curl and gpg")
+![Console recording](https://github.com/espena/pagesign/raw/master/tty1.gif "Verifying remotely using curl and gpg")
 
 ## Installation
 
