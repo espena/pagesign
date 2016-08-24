@@ -116,12 +116,6 @@ Users should also check the source code to verify that nothing has been added be
 A possible attacker might insert a javascript element after the HTML tag, and browsers happily execute the code
 even if it's outside the DOM.
 
-This issue can be circumvented by including a meta tag in the &lt;head&gt; section that effectively prevents
-non-authorized scripts to run. By applying a so called
-[Content Security Policy](http://www.html5rocks.com/en/tutorials/security/content-security-policy/) for script
-sources, we limit the browser to run our own code only. The meta tag must contain the hash values for your scripts.
-Injected code that doesn’t match the hash values will be blocked by the client.
-
 ## Installation
 
 It might be worth the effort to make a shorthand script and put it in one of your system's binary directories. 
